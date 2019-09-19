@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="bootstrap-4.1.min.css">
+  <script src="axios.js"></script>
+  <title>File Upload</title>
+</head>
+<body>
+  <div class="container mt-4">
+    <header>
+      <h3 class="text-center" >Nodejs File Upload With Multer</h3>
+    </header>
+    <!-- center -->
+    <div class="row">
+      <div class="col-md-6 mt-3 mx-auto">
+        <!-- progress bar -->
+        <div class="progress">
+          <div id="bar" class="progress-bar success"></div>
+        </div>
+          <!-- form -->
+        <div class="card card-body">
+          <form id="form">
+            <div class="form-group">
+              <label>File</label>
+              <input id="file"class="form-control" type="file" name="file" multiple>
+            </div>
+            <input class="btn btn-primary " type="submit" value="Upload">
+          </form>  
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- table -->
+  <div class="container-fluid">
+    <!--Show Table-->
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <td>name</td>
+            <td>Filename</td>
+            <td>Size</td>
+            <td>Type</td>
+            <td>File Destination</td>
+          </tr>
+        </thead>
+        <tbody id="show-table">
+
+        </tbody>
+      </table>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
