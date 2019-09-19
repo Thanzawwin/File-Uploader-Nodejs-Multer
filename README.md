@@ -1,5 +1,5 @@
-##You Can Change file multiple and single
-  ##dir /public/main.js
+## You Can Change file multiple and single
+## dir /public/main.js
      //#for single file
     ////////////////////////
     // let file = document.querySelector('#file').files[0];
@@ -24,7 +24,7 @@
     }
     /////////////////////////
 
-  ##dir ./app.js
+## dir ./app.js
     //#for single file
     //const upload = multer({storage}).single('file');
 
